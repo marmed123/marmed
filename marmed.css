@@ -1,9 +1,9 @@
 body{
 	font-family: sans-serif;
 	background-image: url("https://wallpaperaccess.com/full/1439617.jpg");
-	overflow: hidden;
-	background-size: cover;);
+	background-size: cover;
 	background-repeat: no-repeat;
+	background-attachment: fixed;
 
 }
 
@@ -26,7 +26,7 @@ body{
 .B h1{
 	color: #333;
 	font-size: 45px;
-	margin-bottom: 80px;
+	margin-bottom: 50px;
 }
 
 .C {
@@ -54,7 +54,7 @@ body{
 	background-color: #FFEFD5;
 	letter-spacing: 1px;
 	font-weight: bold;
-	margin-bottom: 70px;
+	margin-bottom: 35px;
 
 }
 
@@ -82,6 +82,86 @@ body{
 	font-size: 16px;
 	top:2px;
 }
+
+
+
+
+
+.A1{
+	width: 380px;
+	margin: 3% auto;
+	border-radius: 25px;
+	background-color: rgba(0,0,0,0.1);
+	box-shadow: 0 0 17px #333;
+}
+
+.B1{
+	text-align: center;
+	padding-top: 10px;
+}
+
+.B1 h1{
+	color: #333;
+	font-size: 45px;
+	margin-bottom: 70px;
+}
+
+.C1 {
+	text-align: center;
+}
+
+.C1 input, button {
+	width: 300px;
+	height: 40px;
+	border: none;
+	outline: none;
+	padding-left: 40px;
+	box-sizing: border-box;
+	font-size: 15px;
+	color: #333;
+	margin-bottom: 40px;
+
+}
+
+
+
+
+.C1 button {
+	padding-left: 0;
+	background-color: #FFEFD5;
+	letter-spacing: 1px;
+	font-weight: bold;
+	margin-bottom: 40px;
+
+}
+
+.C1 button:hover {
+	box-shadow: 2px 2px 5px #555;
+	background-color: #FFDEAD;
+
+}
+
+.C1 input:hover {
+	box-shadow: 2px 2px 5px #555;
+	background-color: #ddd;
+
+}
+
+
+.C1 span{
+	position: relative;
+}
+
+.C1 i{
+	position: absolute;
+	left: 15px;
+	color: #333;
+	font-size: 16px;
+	top:2px;
+}
+
+
+
 
 header {
 	position: fixed;
@@ -113,7 +193,8 @@ header {
 	font-size: 15px;
 	font-weight: 600;
 	color: #fff;
-	transition: 0.5
+	transition: 0.5s;
+	transition-property: background;
 }
 
 .logout:hover{
@@ -121,7 +202,52 @@ header {
 
 }
 
+.myacc{
+	background: #2f323A;
+	margin-top: 70px;
+	padding-top: 30px;
+	position: fixed;
+	left: 0;
+	width: 250px;
+	height: 100%;
+	transition: 0.5s;
+	transition-property: left;
+}
 
+ 
+
+}
+
+.myacc i{
+	padding-right: 10px;
+}
+
+label #myaccb{
+	z-index: 1;
+	color: #fff;
+	position: fixed;
+	cursor:pointer;
+	left: 300px; 
+	font-size:20px;
+	margin: 5px 0;
+	transition: 0.5s;
+	transition-property: color; 
+}
+
+label #myaccb:hover{
+ color: #19B3D3;
+}
+
+#check:checked ~ .myacc{
+	left:-190px;
+}
+
+
+
+
+#check{
+	display: none;
+}
 
 
 
@@ -143,3 +269,208 @@ header {
 
 */
 
+
+.container {
+	border: 2px solid #dedede;
+	 background-color: #f1f1f1;
+	 border-radius: 5px;
+	  padding: 10px;
+	  margin: 10px 0;
+	  height: 100px;
+	  opacity: 0.9;
+
+}
+/* Darker chat container */
+.darker {
+   border-color: #ccc;
+   background-color: #F0FFF0;
+}
+/* Clear floats */
+.container:after {
+  content: "";
+   clear: both;
+   display: table;
+}
+/* Style images */
+.container img {
+  float: left;
+ max-width: 60px;
+   width: 100%;
+ margin-right: 20px;
+  border-radius: 50%;
+}
+/* Style the right image */
+.container img.right {
+  float: right;
+  margin-left: 20px;
+  margin-right:0;
+}
+/* Style time text */
+.time-right {
+  float: right;
+  color: #aaa;
+}
+/* Style time text */
+.likes {
+  float: left;
+  color:black;
+  margin-bottom: 40px;
+}
+
+.content{
+	margin-top: 150px;
+    margin-left: 500px;
+    width: 600px;
+    height: 2000px;
+}
+.btnlike{
+	    width: 100px;
+    background-color: hsl(0deg 0% 0% / 0%);
+}
+
+.btnlike button:hover{
+	background-color: #FFDEAD;
+}
+
+
+.searchbox{
+	position: absolute;
+	margin-top: 60px;
+	margin-left: 1300px;
+	transform: translate(-50%,-50%);
+	background: #2f3640;
+	height: 20px;
+	border-radius: 40px;
+	padding: 10px;
+	opacity: 0.8;
+}
+
+.searchbox:hover > .search{
+	width: 42px;
+	padding: 0 6px;
+
+}
+
+.searchbox:hover > .searchb{
+
+}
+
+
+.searchb{
+	
+	float: right;
+	width: 20px;
+	height: 20px;
+	border-radius: 50%;
+	background: #2f3640;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	transition: 0.4s;
+	opacity: 0.8;
+
+}
+
+.search{
+	border: none;
+	background: none;
+	outline: none ;
+	float: left;
+	padding: 0px;
+	color: white;
+	font-size: 16px;
+	transition: 0.4s;
+	opacity: 0.8;
+  width: 100px;
+
+
+}
+
+
+.addbox{
+	position: absolute;
+    margin-top: 90px;
+    margin-left: 790px;
+    transform: translate(-50%,-50%);
+    background: hsl(215deg 15% 22%);
+    height: 30px;
+    width: 550px;
+    border-radius: 40px;
+    padding: 10px;
+    opacity: 0.7;
+}
+
+.addb{
+	
+	float: right;
+	width: 20px;
+	height: 20px;
+	border-radius: 50%;
+	background: #2f3640;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	transition: 0.4s;
+	opacity: 0.8;
+
+}
+
+.message{
+	width: 516px;
+	border: none;
+	background: none;
+	outline: none ;
+	float: left;
+	padding: 0px;
+	color: white;
+	font-size: 16px;
+	opacity: 0.8;
+
+}
+
+.user{
+	font-size: 25px;
+	color: #0D9DBB;
+	font-style: bold;
+	text-transform: uppercase;
+	font-family: Times New Roman;
+
+}
+
+
+p{
+	font-size: 22px
+	font-style: bold;
+	color: black;
+	font-family: arial; 
+
+}
+
+.likes{
+	font-family: Impact, Charcoal, sans-serif ;
+	color: #DC143C;
+
+}
+
+.btnlike{
+	font-family: Lucida Console;
+	color: #6495ED;
+}
+
+#imgprofil{
+	width: 160px;
+	height: 180px;
+	margin-top: 20px;
+	margin-left: 40px;
+	border-radius: 30%
+}
+
+h4{
+	margin-top: 30px;
+	margin-left: 65px;
+	color: #FFF8DC;
+	font-size: 30px;
+	font-family:  serif;
+
+
+}

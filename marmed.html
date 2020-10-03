@@ -3,7 +3,8 @@
 <head>
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link rel="stylesheet" type="text/css" href="marmed.css">
-	<link rel="stylesheet" type="text/css" href="">
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
+
 	<title>MarMed</title>
 </head>
 <body class="page1">
@@ -24,29 +25,81 @@
 	  			<input id="b" type="password" placeholder="password" name="">
 	  		</span><br>
 	  		  <button id="c">login</button>
+	  		  <button id="c1" onclick="createAccount()">Create</button>
+
 	  <!-- 	</form> -->
 	  </div>
 	</div>
 	</div>
+	<div id="crea-acc" style='display:none'>
+		<div class='A1'>
+			
+		<div class="B1">
+			<h1>Create Account</h1>
+		</div>
+		<div class="C1">
+			<span>
+	  			<i class="fa fa-user"></i>
+	  			<input id="a1" type="text" placeholder="Username" name="">
+	  		</span><br>
+	  		<span>
+	  			<i class="fas fa-at"></i>
+	  			<input id="a2" type="email" placeholder="Adress" name="">
+	  		</span><br>
+	  		<span>
+	  			<i class="fa fa-lock"></i>
+	  			<input id="b1" type="password" placeholder="password" name="">
+	  		</span><br>
+	  		<span>
+				<i class="fa fa-image"></i>
+				<input type="file" id="myfile" name="myfile">
+	  		</span><br>
+	  		<button id="c1" onclick="create()">Create</button>
+		</div>
+		</div>
+	</div>
 
-	<div id="account" style='display:none'>
+	<div id="account" style='display:none' >
+
+		<input type="checkbox" id="check">
+
 		<header>
+			<label  for="check">
+				<i class="fas fa-bars" id="myaccb"></i>
+			</label>
+
 			<div class="left">
 			<h3> Room <span> discussion </span></h3>
 			</div>
 		    <div class="right">
-		    	<a href="#" class="logout">Logout</a>
+		    	<a href="#" onclick="logout()" class="logout">Logout</a>
+
+		    	 <div class="searchbox">
+<input type="text" placeholder="search" class="search">
+<a onclick="searchs()" class="searchb" href="#"><i style="color: white" class="fas fa-search"></i></a>
+
+        </div> 
+
 		    </div>
 	    </header>
-	    <div class="myacc"></div>
-	    <center>
-	   <!-- <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/d8ab6559-f3d3-4d15-9294-b8892aaa99e0/dc7nt5b-c413ed46-4f95-41b7-bcfb-641b31d792d2.jpg/v1/fill/w_1024,h_1024,q_75,strp/avatar_profil_by_jeje90an_dc7nt5b-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOiIsImlzcyI6InVybjphcHA6Iiwib2JqIjpbW3sicGF0aCI6IlwvZlwvZDhhYjY1NTktZjNkMy00ZDE1LTkyOTQtYjg4OTJhYWE5OWUwXC9kYzdudDViLWM0MTNlZDQ2LTRmOTUtNDFiNy1iY2ZiLTY0MWIzMWQ3OTJkMi5qcGciLCJoZWlnaHQiOiI8PTEwMjQiLCJ3aWR0aCI6Ijw9MTAyNCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS53YXRlcm1hcmsiXSwid21rIjp7InBhdGgiOiJcL3dtXC9kOGFiNjU1OS1mM2QzLTRkMTUtOTI5NC1iODg5MmFhYTk5ZTBcL2plamU5MGFuLTQucG5nIiwib3BhY2l0eSI6OTUsInByb3BvcnRpb25zIjowLjQ1LCJncmF2aXR5IjoiY2VudGVyIn19.asHCK2DARduYELlPkW37jSju55XfAgw_h5KojpXXkjU" class="img-pro" alt=""> -->
-	   <h4>Marwen</h4>
-	    </center>
-	   <!--  <a href="#"><i class="fas fa-desktop"></i><span>My Profil</span></a> -->
+	    <div class="myacc">
+
+	    </div>
+	    <div class="backg"></div>
+	    <div>hello</div>
+	    
 </div>
-	
+        <div class="addbox" style='display:none'>
+			<input type="text" placeholder="add message" class="message">
+			<a onclick="addMessages()" class="addb" href="#"><i style="color: white" class="far fa-plus-square"></i></a>
+        </div> 
+	 <div class="content">
+
+
+	  </div>
+
 	<script type="text/javascript"  src='https://code.jquery.com/jquery-2.2.4.js'></script>
+	<script src="https://momentjs.com/downloads/moment-with-locales.js"></script>
   <script type="text/javascript" src="marmed.js"></script>
 </body>
 </html>
